@@ -19,14 +19,6 @@ public class HelloController {
         return "Hello Raccoon  " + request.getRequestedSessionId();
     }
 
-    List<Student> students = Arrays.asList(
-            new Student("Suman", 55),
-            new Student("Raj", 70)
-    );
 
-    @GetMapping("/students")
-    public List<Student> getStudents() {
-        return students;
-    }
 }
 
